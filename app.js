@@ -13,8 +13,9 @@ try{
     const res = await axios.get(`https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`);
     // console.log(res);
 
-    const gifUrl = res.data.data[0].images.downsized_medium.url;
+    // const gifUrl = res.data.data[0].images.downsized_medium.url;
     // console.log(gifUrl);
+    const gifUrl = res.data.data[Math.floor(Math.random() * res.data.data.length)].images.downsized_medium.url;
 
     const gifImg = document.createElement('img');
     gifImg.setAttribute('src', gifUrl);
