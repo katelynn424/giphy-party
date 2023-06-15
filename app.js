@@ -10,7 +10,7 @@ async function searchGif(searchTerm){
         return;
     }
 try{
-    const res = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`);
+    const res = await axios.get(`https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`);
     // console.log(res);
 
     const gifUrl = res.data.data[0].images.downsized_medium.url;
