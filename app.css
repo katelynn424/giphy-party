@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+#search{
+    height: 30px;
+    border-radius: 5px;
+}
+
+#gifSearch{
+    background-color: lightpink;
+    border-radius: 5px;
+   
+    height: 30px;
+}
+
+#remove{
+    background-color: lightblue;
+    border-radius: 5px;
+    
+    height: 30px;
+}
+
+#gifs{
+    display: flex;
+}
+
+#gifs img {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
